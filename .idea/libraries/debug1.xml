@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="debug1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_3e801f2c585276f3f273a9825aabeda71442f872.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/classes-a60c8fb3e4b1b0ecd5a4ca894b5d7178e3cb512a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_35b50c6c91927f9ec624c578aaabe0b4a4942418.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-1e1b9752290b1c280dd52b358a97ff77f6683141.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_dbb905ac7bc119733b221bf2bc8275deec8fe894.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/debug_83f147a5ba4f2f2ed7468357703763fcec0439fb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_49ec2c18bf6c0f7170f4b64a894def452eabf2c0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/classes-79f47cc5c4027f323c0ed0c16c68a4ab88158d8a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-3e801f2c585276f3f273a9825aabeda71442f872.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

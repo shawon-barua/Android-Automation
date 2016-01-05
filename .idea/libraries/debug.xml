@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/classes-64740eceb230649e23708c28165eb682765887bc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/classes-f967954cf8a2686d4d6cf6d0e2d9b1e8e29f23dd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-runner-0.2_dba69981ae7792a3291b94d3956d6fbea0ec14be.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/classes-48872fd9592b69cb65f6f4953c3c5fac34f41cd2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-exposed-instrumentation-api-publish-0.2_8434eed4b86d19be9f44fdd794ba3040fbf89d0d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/debug_3aaba1424f9586cf8f2bd4e9f1fa6f4a709615e5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-rules-0.2_2a668719fbfb317772fb6a9fbdd5effc66d6feef.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/hamcrest-core-1.1_f0c460e1299deea9af5bd74627722cbd5b2801da.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test.uiautomator-uiautomator-v18-2.1.0_942d4203b84a81e8a85168bf25cfac707775f642.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/junit-dep-4.10-f319f2ec910a29161df36c387737846ecc1fe9c2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/hamcrest-core-1.1-f0c460e1299deea9af5bd74627722cbd5b2801da.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/junit-dep-4.10_f319f2ec910a29161df36c387737846ecc1fe9c2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Automationv1.1/app/build/intermediates/pre-dexed/androidTest/debug/classes-6a77f159452547a032778e59b66d31c17981a90d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
