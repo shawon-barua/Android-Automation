@@ -23,10 +23,10 @@ public class CameraRear extends InstrumentationTestCase {
        // appsButton.click();
 
         // Wait till the Calculator icon is on the screen
-
-        device.wait(Until.hasObject(By.text("Camera")), 3000);
-        UiObject2 cameraApp = device.findObject(By.text("Camera"));
-        cameraApp.click();
+        device.swipe(300, 590, 300, 590, 0);
+     //   device.wait(Until.hasObject(By.text("Camera")), 3000);
+       // UiObject2 cameraApp = device.findObject(By.text("Camera"));
+      //  cameraApp.click();
         device.waitForIdle(5000);
        // UiObject2 calculatorApp = device.findObject(By.text("Calculator"));
        // calculatorApp.click();
@@ -37,13 +37,13 @@ public class CameraRear extends InstrumentationTestCase {
 
         device.wait(Until.hasObject(By.res("com.android.camera:id/camera_bottom_bar")), 1000);
 
-        UiObject2 capture1 = device.findObject(By.res("com.android.camera:id/shutter_indicator_view"));
+        UiObject2 capture1 = device.findObject(By.res("com.android.camera2:id/shutter_button"));
        // UiObject2 capture1 = device.findObject(By.res("com.android.gallery3d:id/shutter_button_photo"));
        // UiObject2 capture1 = device.findObject(By.res("org.codeaurora.snapcam:id/shutter_button"));
         device.waitForIdle(3000);
         for (int i = 0; i < 1001; i++) {
             capture1.click();
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         }
        // capture1.click();
         //Thread.sleep(1000);

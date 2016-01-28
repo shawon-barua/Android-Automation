@@ -54,13 +54,14 @@ public class CalculatorSci extends InstrumentationTestCase{
         UiObject2 CLEAR = device.findObject(By.text("clr"));
         CLEAR.click();
 
-        device.swipe(700,900 , 175,900, 40);
+        device.swipe(700,900 , 303,900, 80);
 
         device.waitForIdle(3000);
         UiObject2 cos1 = device.findObject(By.res("com.android.calculator2:id/digit_9"));
         cos1.click();
         device.waitForIdle(1000);
-        device.swipe(175, 900, 700, 900, 40);
+       // device.swipe(175, 900, 700, 900, 40);
+        device.swipe(1400, 1000, 860, 1000, 40);
         device.waitForIdle(1000);
         buttonNine.click();
         device.waitForIdle(1000);
