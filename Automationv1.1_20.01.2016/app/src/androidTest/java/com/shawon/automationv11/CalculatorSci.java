@@ -21,8 +21,8 @@ public class CalculatorSci extends InstrumentationTestCase{
         // Wait till the Apps icon is on the screen
         device.wait(Until.hasObject(By.desc("Apps")), 3000);
 
-       // UiObject2 appsButton = device.findObject(By.desc("Apps"));
-       // appsButton.click();
+        // UiObject2 appsButton = device.findObject(By.desc("Apps"));
+        // appsButton.click();
 
         // Wait till the Calculator icon is on the screen
         device.wait(Until.hasObject(By.text("Calculator")), 3000);
@@ -37,31 +37,30 @@ public class CalculatorSci extends InstrumentationTestCase{
         device.wait(Until.hasObject(By.text("9")), 3000);
 
         UiObject2 buttonNine = device.findObject(By.text("0"));
-       // buttonNine.click();
+        // buttonNine.click();
 
         UiObject2 buttonPlus = device.findObject(By.text("+"));
-       // buttonPlus.click();
+        // buttonPlus.click();
 
-       // buttonNine.click();
+        // buttonNine.click();
 
         UiObject2 buttonEquals = device.findObject(By.text("="));
-      //  buttonEquals.click();
+        //  buttonEquals.click();
 
-      //  device.waitForIdle(3000);
+        //  device.waitForIdle(3000);
 
 
 
         UiObject2 CLEAR = device.findObject(By.text("clr"));
         CLEAR.click();
 
-        device.swipe(700,900 , 303,900, 80);
+        device.swipe(700,900 , 175,900, 40);
 
         device.waitForIdle(3000);
         UiObject2 cos1 = device.findObject(By.res("com.android.calculator2:id/digit_9"));
         cos1.click();
         device.waitForIdle(1000);
-       // device.swipe(175, 900, 700, 900, 40);
-        device.swipe(1400, 1000, 860, 1000, 40);
+        device.swipe(175, 900, 700, 900, 40);
         device.waitForIdle(1000);
         buttonNine.click();
         device.waitForIdle(1000);
@@ -69,13 +68,13 @@ public class CalculatorSci extends InstrumentationTestCase{
         String result = resultText.getText();
         buttonEquals.click();
 
-      // UiObject2 resultText = device.findObject(By.res("com.android.calculator2:id/result"));
-     //   String result = resultText.getText();
-      //  assertTrue(result.equals(1));
+        // UiObject2 resultText = device.findObject(By.res("com.android.calculator2:id/result"));
+        //   String result = resultText.getText();
+        //  assertTrue(result.equals(1));
 
         device.waitForIdle(3000);
 
-       // UiObject2 resultText = device.findObject(By.clazz("android.widget.EditText"));
+        // UiObject2 resultText = device.findObject(By.clazz("android.widget.EditText"));
 
 
         assertTrue(result.equals("1"));
