@@ -41,7 +41,7 @@ public class CameraE extends InstrumentationTestCase {
        // UiObject2 capture1 = device.findObject(By.res("com.android.gallery3d:id/shutter_button_photo"));
        // UiObject2 capture1 = device.findObject(By.res("org.codeaurora.snapcam:id/shutter_button"));
         device.waitForIdle(3000);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 1000; i++) {
             capture1.click();
             Thread.sleep(3000);
         }

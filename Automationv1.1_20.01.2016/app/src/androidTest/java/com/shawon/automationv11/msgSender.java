@@ -30,7 +30,7 @@ public class msgSender extends InstrumentationTestCase{
 
     }
 
-    public void testAdd() throws Exception {
+    public void testMsg() throws Exception {
 
         device.wait(Until.hasObject(By.res("com.android.mms:id/amigo_overlap")), 2000);
 
@@ -42,6 +42,7 @@ public class msgSender extends InstrumentationTestCase{
       //  device.waitForIdle(2000);
        // conversion.setText("01911053670");
         UiObject2 resultText = device.findObject(By.res("com.android.mms:id/embedded_text_editor"));
+        //resultText.clear();
       //  resultText.click();
         device.waitForIdle(7000);
        // resultText.setText("Test");
