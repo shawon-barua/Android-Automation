@@ -16,27 +16,24 @@ public class playStore extends InstrumentationTestCase{
         device = UiDevice.getInstance(getInstrumentation());
         device.pressHome();
 
-        // Wait till the Apps icon is on the screen
         device.wait(Until.hasObject(By.desc("Apps")), 3000);
-
-        // UiObject2 appsButton = device.findObject(By.desc("Apps"));
-        // appsButton.click();
 
         // Wait till the Calculator icon is on the screen
         device.wait(Until.hasObject(By.text("Play Store")), 3000);
 
-        UiObject2 calculatorApp = device.findObject(By.text("Play Store"));
-        calculatorApp.click();
+        UiObject2 playStore = device.findObject(By.text("Play Store"));
+        playStore.click();
 
     }
 
     public void testPlayStore() throws Exception {
 
-        device.wait(Until.hasObject(By.res("android.widget.FrameLayout")), 1000);
+        device.wait(Until.hasObject(By.res("android.widget.FrameLayout")), 4000);
 
         device.swipe(665, 100, 665, 100, 0);
-        device.waitForIdle(6000);
-        device.swipe(73, 1000, 73, 1000, 0);
+        device.wait(Until.hasObject(By.res("com.android.vending:id/search_box_text_input")), 4000);
+       // device.waitForIdle(12000);
+        device.swipe(70, 1000, 70, 1000, 0);
         device.waitForIdle(1000);
         device.swipe(501, 1106, 501, 1106, 0);
         device.waitForIdle(1000);

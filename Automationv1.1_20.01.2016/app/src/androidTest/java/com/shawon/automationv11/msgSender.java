@@ -47,7 +47,7 @@ public class msgSender extends InstrumentationTestCase{
         device.waitForIdle(7000);
        // resultText.setText("Test");
         for(int j=1;j<=4;j++) {
-            for (int i = 1; i < 20; i++) {
+            for (int i = 1; i < 2; i++) {
                 device.swipe(107, 888, 107, 888, 0);
                 device.waitForIdle(1000);
                 device.swipe(72, 1001, 71, 1001, 0);
@@ -69,21 +69,18 @@ public class msgSender extends InstrumentationTestCase{
 
 
             //device.swipe(433, 1111, 433, 1111, 0);
-            //device.swipe(355, 794, 355, 794, 0);
+            //device.swipe(535, 794, 355, 794, 0);
 
-        }    // UiObject2 snd = device.find Object(By.res("com.android.mms:id/gn_send_msg_text"));
-      //  snd.click();
-      //device.swipe(660,1223,660,1223,10);
+        }
+        device.pressBack();
+        device.pressBack();
 
-       // device.waitForIdle(5000);
+        UiObject2 press = device.findObject(By.res("com.android.mms:id/amigo_button1"));
+        device.swipe(635, 1230, 535, 1232, 0);
+        //press.click();
+       // device.waitForIdle(4000);
+        device.pressBack();
 
-           //device.swipe(140,438,435,438,40);
-       // device.wait(Until.hasObject0(By.res("com.google.android.youtube:id/compact_video_item")), 6000);
-      // UiObject2 video = device.findObject(By.res("com.google.android.youtube:id/compact_video_item"));
-       // device.waitForIdle(3000);
-       // video.click();
-       // device.waitForIdle(3000);
-       // assertTrue(result.equals("1"));
 
     }
 }

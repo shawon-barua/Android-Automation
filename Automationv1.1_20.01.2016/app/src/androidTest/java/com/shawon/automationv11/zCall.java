@@ -6,7 +6,7 @@ import android.support.test.uiautomator.UiObject2;
 import android.support.test.uiautomator.Until;
 import android.test.InstrumentationTestCase;
 
-public class mulCall extends InstrumentationTestCase{
+public class zCall extends InstrumentationTestCase{
 
     private UiDevice device;
 
@@ -32,7 +32,7 @@ public class mulCall extends InstrumentationTestCase{
 
     public void testCall() throws Exception {
 
-        for(int i=1;i<11;i++) {
+        for(int i=1;i<2;i++) {
             device.wait(Until.hasObject(By.res("com.android.contacts:id/dialButton")), 2000);
 
 
@@ -79,18 +79,7 @@ public class mulCall extends InstrumentationTestCase{
             device.wait(Until.hasObject(By.res("com.android.contacts:id/dialButton")), 800000);
             //  wait(100000);
         }
-        //  snd.click();
-        //device.swipe(660,1223,660,1223,10);
 
-        // device.waitForIdle(5000);
-
-        //device.swipe(140,438,435,438,40);
-        // device.wait(Until.hasObject0(By.res("com.google.android.youtube:id/compact_video_item")), 6000);
-        // UiObject2 video = device.findObject(By.res("com.google.android.youtube:id/compact_video_item"));
-        // device.waitForIdle(3000);
-        // video.click();
-        // device.waitForIdle(3000);
-        // assertTrue(result.equals("1"));
 
     }
 }

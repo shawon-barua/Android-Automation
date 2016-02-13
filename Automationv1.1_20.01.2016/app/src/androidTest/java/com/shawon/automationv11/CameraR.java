@@ -37,21 +37,10 @@ public class CameraR extends InstrumentationTestCase {
 
         device.wait(Until.hasObject(By.res("com.android.camera:id/camera_bottom_bar")), 1000);
 
-
-       // device.waitForIdle(3000);
-        //capture1.click();
-
-       // device.waitForIdle(6000);
         UiObject2 back = device.findObject(By.res("com.android.camera:id/camera_picker"));
         device.waitForIdle(3000);
-       back.click();
-       // device.waitForIdle(3000);
-      //  UiObject2 capture1 = device.findObject(By.res("com.android.camera:id/shutter_indicator_view"));
-     //   device.waitForIdle(3000);
-      //  capture1.click();
-       // Thread.sleep(40);
-       // UiObject2 calculatorApp = device.findObject(By.text("Calculator"));
-        //calculatorApp.swipe();
+        back.click();
+        device.waitForIdle(3000);
 
     }
 }

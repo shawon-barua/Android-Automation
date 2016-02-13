@@ -18,12 +18,6 @@ public class YouTube extends InstrumentationTestCase{
         device = UiDevice.getInstance(getInstrumentation());
         device.pressHome();
 
-        // Wait till the Apps icon is on the screen
-        device.wait(Until.hasObject(By.desc("Apps")), 3000);
-
-       // UiObject2 appsButton = device.findObject(By.desc("Apps"));
-       // appsButton.click();
-
         // Wait till the Calculator icon is on the screen
         device.wait(Until.hasObject(By.desc("Folder: Google")), 3000);
 
@@ -32,20 +26,24 @@ public class YouTube extends InstrumentationTestCase{
 
     }
 
-    public void testAdd() throws Exception {
+    public void testYtube() throws Exception {
 
         device.wait(Until.hasObject(By.text("YouTube")), 6000);
 
         UiObject2 tube = device.findObject(By.text("YouTube"));
         tube.click();
-          device.waitForIdle(3000);
-         UiObject2 search = device.findObject(By.desc("Search"));
-         search.click();
+         // device.waitForIdle(10000);
+        device.wait(Until.hasObject(By.res("com.google.android.youtube:id/accessibility_layer_container")), 15000);
+        device.swipe(580, 100, 580, 100, 0);
+        device.wait(Until.hasObject(By.res("com.google.android.youtube:id/search_edit_text")), 15000);
+       // device.waitForIdle(3000);
+   //      UiObject2 search = device.findObject(By.desc("Search"));
+   //      search.click();
 
        UiObject2 resultText = device.findObject(By.res("com.google.android.youtube:id/search_edit_text"));
        resultText.setText("walton");
               device.waitForIdle(3000);
-      device.swipe(660,1223,660,1223,10);
+      device.swipe(660,1223,660,1223,0);
 
         //device.waitForIdle(5000);
 
@@ -57,5 +55,5 @@ public class YouTube extends InstrumentationTestCase{
        // device.waitForIdle(3000);
        // assertTrue(result.equals("1"));
 
-    }
+     }
 }

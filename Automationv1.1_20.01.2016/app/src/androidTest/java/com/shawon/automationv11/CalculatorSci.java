@@ -47,12 +47,16 @@ public class CalculatorSci extends InstrumentationTestCase{
         UiObject2 buttonEquals = device.findObject(By.text("="));
         //  buttonEquals.click();
 
-        //  device.waitForIdle(3000);
+        //
 
+        for(int i=1;i<=10;i++)
+        {
+            device.swipe(600,570 ,600,570, 0);
+        }
 
-
-        UiObject2 CLEAR = device.findObject(By.text("clr"));
-        CLEAR.click();
+        device.waitForIdle(6000);
+       // UiObject2 CLEAR = device.findObject(By.text("clr"));
+       // CLEAR.click();
 
         device.swipe(700,900 , 175,900, 40);
 

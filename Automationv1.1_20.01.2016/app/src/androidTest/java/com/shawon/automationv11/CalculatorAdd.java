@@ -17,12 +17,7 @@ public class CalculatorAdd extends InstrumentationTestCase{
         device.pressHome();
 
         // Wait till the Apps icon is on the screen
-        device.wait(Until.hasObject(By.desc("Apps")), 3000);
-
-        // UiObject2 appsButton = device.findObject(By.desc("Apps"));
-        // appsButton.click();
-
-        // Wait till the Calculator icon is on the screen
+       // device.wait(Until.hasObject(By.desc("Apps")), 3000);
         device.wait(Until.hasObject(By.text("Calculator")), 3000);
 
         UiObject2 calculatorApp = device.findObject(By.text("Calculator"));
@@ -32,8 +27,14 @@ public class CalculatorAdd extends InstrumentationTestCase{
 
     public void testAdd() throws Exception {
 
-        device.wait(Until.hasObject(By.text("9")), 3000);
 
+        device.wait(Until.hasObject(By.text("9")), 3000);
+        for(int i=1;i<=10;i++)
+        {
+            device.swipe(600,570 ,600,570, 0);
+        }
+
+        device.waitForIdle(6000);
         UiObject2 buttonNine = device.findObject(By.text("9"));
         buttonNine.click();
 
