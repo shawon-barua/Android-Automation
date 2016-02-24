@@ -1,21 +1,15 @@
 package com.shawon.automationv11;
 
 
-        import android.os.RemoteException;
-
-        import android.support.test.uiautomator.UiDevice;
-
-        import android.support.test.uiautomator.UiObject;
-
-        import android.support.test.uiautomator.UiObjectNotFoundException;
-
-        import android.support.test.uiautomator.UiSelector;
-
-        import android.test.InstrumentationTestCase;
+import android.os.RemoteException;
+import android.support.test.uiautomator.UiDevice;
+import android.support.test.uiautomator.UiObject;
+import android.support.test.uiautomator.UiObjectNotFoundException;
+import android.support.test.uiautomator.UiSelector;
+import android.test.InstrumentationTestCase;
 
 
-
-public class lWifi extends InstrumentationTestCase{
+public class blueTooth extends InstrumentationTestCase{
 
     private UiDevice mydevice;
 
@@ -56,35 +50,22 @@ public class lWifi extends InstrumentationTestCase{
 
         // Wi-Fi settings
         UiObject WiFiSettings = mydevice.findObject(new UiSelector()
-                .text("WLAN"));
+                .text("Bluetooth"));
 
         if (WiFiSettings.exists())
             WiFiSettings.click();
 
         // Switch ON
         UiObject WifiOnButton = mydevice.findObject(new UiSelector()
-                .text("On"));
+                .text("ON"));
         // Switch OFF
         UiObject WifiOffButton = mydevice.findObject(new UiSelector()
-                .text("Off"));
+                .text("OFF"));
 
         if (WifiOnButton.exists()) {
             WifiOnButton.click();
         } else if (WifiOffButton.exists()) {
             WifiOffButton.click();
-        }
-
-
-        UiObject scan = mydevice.findObject(new UiSelector().text("Scan"));
-
-        if(WifiOnButton.exists())
-        {
-            assertTrue(scan.isEnabled());
-        }
-
-        else
-        {
-            assertFalse(scan.isEnabled());
         }
 
     }
