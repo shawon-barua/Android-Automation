@@ -16,7 +16,7 @@ public class Asphalt8 extends InstrumentationTestCase{
 
 
         device = UiDevice.getInstance(getInstrumentation());
-        device.pressDPadCenter();
+
         device.pressHome();
 
         device.wait(Until.hasObject(By.desc("Apps")), 3000);
